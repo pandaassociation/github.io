@@ -1,184 +1,171 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Carousel Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-<!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
--->
-      
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Carousel Template for Bootstrap</title>
+      <!-- Bootstrap core CSS -->
+      <!--
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+         -->
       <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Arima+Madurai"rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+      <link href="https://fonts.googleapis.com/css?family=Arima+Madurai"rel="stylesheet">
+      <!-- Custom styles for this template -->
       <style>
-        p#intro{
-            font-size: 20px;
-            font-weight: bold;
-            width: 500px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            
-        }
-      img.rounded-circle{
-          margin-bottom: 50px;
-      }
-          .featurette-divider{
-              margin: 50px;
-          }
-          a.btn{
-              margin-bottom: 25px;
-          }
-          body{
-              font-family: 'Arima Madurai', cursive;
-          }
-          h1#about{
-              font-size: 50px;
-              font-weight: bold;
-          }
-              .circular {
-        width: 25px;
-        height: 25px;
-        border-radius: 45px;
-        -webkit-border-radius: 45px;
-        -moz-border-radius: 45px;
-        background: url(../src/imgs/logo_s.png) no-repeat;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        margin-right: 10px;
-    }
-          img#profit{
-    transition: all .2s ease-out;
-}
-          img#profit:hover{
-  transform: scale(1.1);
-}
-          h3{
-              margin-left: 50px;
-          }
-          
-          #about{
-              margin-top: 40px;
-              margin-left: 100px;
-          }
-                    .rounded-circle{
-              box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-          }
-
-    </style>
-  </head>
-    
-  <body>
-
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <div class="circular"></div>
-            </li>
-          </ul>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="navbar-brand" href="../index.html">Panda Association</a>
-            </li>
-          </ul>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-<!--
-              <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
--->
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
-
-    <main role="main">
-
-      <div class="carousel-item active">
-        <img class="first-slide" src="../src/imgs/aboutus.jpg" width="100%" alt="First slide">
-        <div class="container">
-          <div class="carousel-caption text-left">
-<!--            <h1 id="about">Structure</h1>-->
-          </div>
-        </div>
-      </div>
-            <h1 id="about" style="color:black">Structure</h1>
-        <hr class="featurette-divider">
-        
-      <div class="container marketing">
-          
-        <img src="https://i.imgur.com/JQEwg1J.png" />
-          <p><h1>1).Administration Department:</h1>
-          <h3>Manage logistics and making plans to train volunteers<br/></h3>
-          <h1>2).Publicity Department:</h1>
-          <h3>Promote PV and PV’s programs.<br/></h3>
-          <h1>3).Human Resources Department:</h1>
-          <h3>Recruit volunteers and faculties.<br/></h3>
-          <h1>4).Activity Department:</h1> 
-          <h3>Held Spring Festival Gala, Mid-Autumn Party, and other Chinese traditional celebrations; Held sodalities,pick-up services, and freshmen meetings; and Held employment training session.</h3>
-          </p>
-       
-          
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-            <div class="row">
-              <div class="col-lg-4">
-                <img class="rounded-circle" src="../src/imgs/logo.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>Panda Association</h2>
-                <p><a class="btn btn-secondary" href="../about/index.html" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="rounded-circle" src="../src/imgs/recruitment.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>RECRUITMENT</h2>
-                <p><a class="btn btn-secondary" href="../recruitment/index.html" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="rounded-circle" src="../src/imgs/project.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>PROJECTS</h2>
-                <p><a class="btn btn-secondary" href="../projects/index.html" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
+         p#intro{
+         font-size: 20px;
+         font-weight: bold;
+         width: 500px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+         }
+         img.rounded-circle{
+         margin-bottom: 50px;
+         }
+         .featurette-divider{
+         margin: 50px;
+         }
+         a.btn{
+         margin-bottom: 25px;
+         }
+         body{
+         font-family: 'Arima Madurai', cursive;
+         }
+         h1#about{
+         font-size: 50px;
+         font-weight: bold;
+         }
+         .circular {
+         width: 25px;
+         height: 25px;
+         border-radius: 45px;
+         -webkit-border-radius: 45px;
+         -moz-border-radius: 45px;
+         background: url(../src/imgs/logo_s.png) no-repeat;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+         margin-right: 10px;
+         }
+         img#profit{
+         transition: all .2s ease-out;
+         }
+         img#profit:hover{
+         transform: scale(1.1);
+         }
+         h3{
+         margin-left: 50px;
+         }
+         #about{
+         margin-top: 40px;
+         margin-left: 100px;
+         }
+         .rounded-circle{
+         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+         -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+         -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <div class="circular"></div>
+               </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="navbar-brand" href="../index.html">Panda Association</a>
+               </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav mr-auto">
+                  <!--
+                     <li class="nav-item active">
+                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     -->
+               </ul>
+               <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </form>
+            </div>
+         </nav>
+      </header>
+      <main role="main">
+         <div class="carousel-item active">
+            <img class="first-slide" src="../src/imgs/aboutus.jpg" width="100%" alt="First slide">
+            <div class="container">
+               <div class="carousel-caption text-left">
+                  <!--            <h1 id="about">Structure</h1>-->
+               </div>
+            </div>
+         </div>
+         <h1 id="about" style="color:black">Structure</h1>
+         <hr class="featurette-divider">
+         <div class="container marketing">
+            <p>
+            <h1>1).Administration Department:</h1>
+            <h3>Manage logistics and making plans to train volunteers<br/></h3>
+            <h1>2).Publicity Department:</h1>
+            <h3>Promote PV and PV’s programs.<br/></h3>
+            <h1>3).Human Resources Department:</h1>
+            <h3>Recruit volunteers and faculties.<br/></h3>
+            <h1>4).Activity Department:</h1>
+            <h3>Held Spring Festival Gala, Mid-Autumn Party, and other Chinese traditional celebrations; Held sodalities,pick-up services, and freshmen meetings; and Held employment training session.</h3>
+            </p>
             <hr class="featurette-divider">
-
-          <!-- FOOTER -->
-          <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-              <p>&copy; 2017 Panda Asssociation.</p>
-          </footer>
-        </div><!-- /.container -->
-    </main>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
-  </body>
+            <img src="https://i.imgur.com/JQEwg1J.png" width="100%"/>
+            <hr class="featurette-divider">
+            <!-- /END THE FEATURETTES -->
+            <div class="row">
+               <div class="col-lg-4">
+                  <img class="rounded-circle" src="../src/imgs/logo.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2>Panda Association</h2>
+                  <p><a class="btn btn-secondary" href="../about/index.html" role="button">View details &raquo;</a></p>
+               </div>
+               <!-- /.col-lg-4 -->
+               <div class="col-lg-4">
+                  <img class="rounded-circle" src="../src/imgs/recruitment.jpg" alt="Generic placeholder image" width="140" height="140">
+                  <h2>RECRUITMENT</h2>
+                  <p><a class="btn btn-secondary" href="../recruitment/index.html" role="button">View details &raquo;</a></p>
+               </div>
+               <!-- /.col-lg-4 -->
+               <div class="col-lg-4">
+                  <img class="rounded-circle" src="../src/imgs/project.jpg" alt="Generic placeholder image" width="140" height="140">
+                  <h2>PROJECTS</h2>
+                  <p><a class="btn btn-secondary" href="../projects/index.html" role="button">View details &raquo;</a></p>
+               </div>
+               <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <hr class="featurette-divider">
+            <!-- FOOTER -->
+            <footer class="container">
+               <p class="float-right"><a href="#">Back to top</a></p>
+               <p>&copy; 2017 Panda Asssociation.</p>
+            </footer>
+         </div>
+         <!-- /.container -->
+      </main>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+      <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+      <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+   </body>
 </html>
