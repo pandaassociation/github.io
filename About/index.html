@@ -1,0 +1,220 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+-->
+      
+      <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai"rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+      <style>
+        p#intro{
+            font-size: 20px;
+            font-weight: bold;
+            width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            
+        }
+      img.rounded-circle{
+          margin-bottom: 50px;
+      }
+          .featurette-divider{
+              margin: 50px;
+          }
+          a.btn{
+              margin-bottom: 25px;
+          }
+          body{
+              font-family: 'Arima Madurai', cursive;
+          }
+          h1#about{
+              font-size: 50px;
+              font-weight: bold;
+          }
+              .circular {
+        width: 25px;
+        height: 25px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        background: url(../src/imgs/logo_s.png) no-repeat;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        margin-right: 10px;
+    }
+          img#profit{
+    transition: all .2s ease-out;
+}
+          img#profit:hover{
+  transform: scale(1.1);
+}
+
+    </style>
+  </head>
+    
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <div class="circular"></div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="#">Panda Association</a>
+            </li>
+          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div class="carousel-item active">
+        <img class="first-slide" src="../src/imgs/aboutus.jpg" width="100%" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1 id="about">About Us</h1>
+            <p id="intro">Panda Association is a non-profit youth-run organization. It was set up in Nov. 11th，2017 by five young Chinese overseas USC price school students. Panda Association is mostly responsible for helping away-from-home Chinese in their daily life, study, work, and other issues. PA also serves as a bridge between the Chinese and other communities, spreading Chinese culture.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+        
+        
+      <div class="container marketing">
+
+          <hr class="featurette-divider">
+          
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Yicheng Jiang <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Don't hesitate to join us!</p>
+          </div>
+          <div class="col-md-5">
+            <img id="profit" class="featurette-image img-fluid mx-auto" src="../src/imgs/profit4.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Jiaoyang Li <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">I am looking forward to working with you to send joy to Chinese students.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img id="profit" class="featurette-image img-fluid mx-auto" src="../src/imgs/profit1.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Yueming Liang <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Join the Panda Association, you are growing together as assisting others.</p>
+          </div>
+          <div class="col-md-5">
+            <img id="profit" class="featurette-image img-fluid mx-auto" src="../src/imgs/profit2.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+          
+          <hr class="featurette-divider">
+          
+      <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Zhihang Hu <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">I hope that our organization can give the Chinese students the sense of belonging. Meanwhile, providing them with more opportunities to participate in various activities, make new friends, and make progress together.</p>
+          </div>
+          <div class="col-md-5">
+            <img id="profit" class="featurette-image img-fluid mx-auto" src="../src/imgs/profit3.png" alt="Generic placeholder image">
+          </div>
+        </div>
+          
+          <hr class="featurette-divider">
+          
+      <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Yan Xu <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Never underestimate your power to change yourself! Explore your potential with us now.</p>
+          </div>
+          <div class="col-md-5">
+            <img id="profit" class="featurette-image img-fluid mx-auto" src="../src/imgs/profit5.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="../src/imgs/structure.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>STRUCTURE</h2>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="../src/imgs/recruitment.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>RECRUITMENT</h2>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="../src/imgs/project.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>PROJECTS</h2>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <hr class="featurette-divider">
+
+          <!-- FOOTER -->
+          <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+              <p>&copy; 2017 Panda Asssociation.</p>
+          </footer>
+        </div><!-- /.container -->
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

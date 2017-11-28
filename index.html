@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    if (!window.jQuery) {
+      var script = document.createElement('script');
+      script.src = "https://cdn.bootcss.com/jquery/3.0.0/jquery.js";
+      document.body.appendChild(script);
+    }
+  </script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LINENG CAO</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Mate:400,400italic|Mate+SC">
+  <link rel="stylesheet" media="all" href="sig/zhaozi_20170704105136-embed.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai"rel="stylesheet">
+  <style> 
+
+    #background {
+        /*transition: all .5s ease-out;*/
+        position:absolute;
+        width: 100%; 
+        height: 100%; 
+        position: fixed; 
+        left: 0px; 
+        top: 0px; 
+        z-index: -999; /* Ensure div tag stays behind content; -999 might work, too. */
+        background-color: black;
+    }
+      
+    .Absolute-Center {  
+      margin: auto;  
+      position: absolute;  
+      top: 0; left: 0; bottom: 0; right: 0;  
+    }  
+      
+    .stretch {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    @media screen and (min-width: 901px) { 
+        .stretch {width:inherit;height:auto;} 
+        li {display: inline;list-style:none;width:auto;text-align: left;}
+        ins {visibility: visible}
+        li.link {margin-left: -0.2em}
+        a.link_name {margin-left: -0.1em;font-family: 'Dancing Script', cursive;font-size: 20px}
+        a.slash {font-size: 15px; margin-left: 0.2em}
+        div.infomation {width: auto;padding-left: 0em}
+    } 
+
+    @media screen and (max-width: 900px) { 
+        .stretch {width:auto;height:inherit;align-content: center}
+        li {list-style:none;width:auto;text-align: left;}
+        ins {visibility: hidden}
+        li.link {margin-left: 4.87em}
+        a.link_name {margin-left: 0.55em;font-family: 'Dancing Script', cursive;font-size: 20px}
+        a.slash {font-size: 15px; margin-left: 0.6em}
+        div.infomation {width: 280px;padding-left: 1.5em}
+    } 
+
+    body {
+        font-family: 'Arima Madurai', cursive;
+        
+        font-size: 18px;
+        color: white;
+        text-shadow: 0 .08em .08em #56B2C9, 0 .2em .16em black;
+    }
+    
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: .15s;
+        line-height: 1.5
+    }
+
+    a:hover {
+        color: #FF5662;
+        transition: .15s;
+    }
+      
+      a#logo{
+          font-family: 'Gloria Hallelujah', cursive;
+          font-size: 50px;
+      }
+
+    #item {
+        position: relative;
+        top: 50vh;
+        text-align: center;
+        transform: translateY(-50%);     
+    }
+
+    ins {
+        text-decoration: none;
+        color: #5CBED6;
+        margin: 0 .4em;
+    }
+
+    .circular {
+        width: 150px;
+        height: 150px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        background: url(./src/imgs/logo.png) no-repeat;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1.);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);        
+    }
+
+    div.infomation {
+        margin: 2em;
+    }
+
+    a.sign{
+        font-size: 25px;
+        font-family: zhaozi_20170704105136;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+    }
+      
+    li.name a, a.slash:hover {
+        color: #FFFFFF;
+        
+    }
+
+    #load{
+        display: none;
+    }
+    
+  </style>
+</head>
+    
+    <body id='body' onload='onload()'>
+        <div id="background">
+            <img class="stretch" alt="" id='myimage'/>
+        </div>
+        <div id="item">
+            <center>
+                <center><div class="circular"></div></center>          
+                <center>
+                    <div class="infomation">
+                        <li class="name">
+                            <a id="logo">Panda Association</a>
+                        </li>                       
+                        <li class="link">
+                            <ins>&middot;</ins><a class="slash"></a>
+                            <a class="link_name" title="About us" href="/About/index.html"><br/><br/><strong>ABOUT US</strong></a>
+                        </li>
+                    </div>
+                </center>
+            </center>
+        </div>
+        <!--啦啦啦，我是一个小彩蛋-->
+    </body>
+    
+    <script type='text/javascript'>
+
+        
+        var myImage = document.getElementById("myimage");
+
+        var imageArray;
+        
+        var imageIndex = 0; 
+
+        function changeImage() {
+            myImage.setAttribute("src",imageArray[imageIndex]);
+            $("#myimage").delay(1500).fadeIn(1000);
+            $("#myimage").delay(5000).fadeOut(1000);
+                     
+          imageIndex = (imageIndex + 1) % imageArray.length;
+        }
+        
+        setInterval(changeImage, 10000); //
+        
+        function loadJSON(){
+            var data_file = "./src/json/blackground_list.json";
+            var http_request = new XMLHttpRequest();
+            try{
+               // Opera 8.0+, Firefox, Chrome, Safari
+               http_request = new XMLHttpRequest();
+            }catch (e){
+               // Internet Explorer Browsers
+               try{
+                  http_request = new ActiveXObject("Msxml2.XMLHTTP");
+					
+               }catch (e) {
+				
+                  try{
+                     http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                  }catch (e){
+                     // Something went wrong
+                     alert("Your browser broke!");
+                     return false;
+                  }
+					
+               }
+            }
+			
+            http_request.onreadystatechange = function(){
+			
+               if (http_request.readyState == 4  ){
+                  // Javascript function JSON.parse to parse JSON data
+                  var jsonObj = JSON.parse(http_request.responseText);
+
+                  imageArray = jsonObj.blackground_list;
+                  changeImage();
+               }
+            }
+			
+            http_request.open("GET", data_file, true);
+            http_request.send();
+         }
+        
+        
+        function onload(){
+            loadJSON();
+        }
+       
+    </script>
+</html>
